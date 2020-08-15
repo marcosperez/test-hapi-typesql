@@ -1,5 +1,15 @@
 # Ejecucion
 
+## Requerimientos
+
+- nodejs 12 o mayor
+- pgadmin
+- docker o bd local
+
+## Instalacion de paquetes
+
+npm install
+
 ## Iniciar base de datos
 
 ```
