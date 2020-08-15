@@ -39,7 +39,10 @@ const init = async () => {
     path: "/usuarios",
     handler: async (request: Request, h: ResponseToolkit) => {
       const repoUser = conn.getRepository(User);
-      const where = { ...request.query };
+      const where = {
+        ...request.query,
+        ...{ relations: ["direction", "products", "products.categorias"] },
+      };
       return repoUser.find(where);
     },
   });

@@ -28,8 +28,8 @@ const getConnection = async () => {
     database: "shop",
     // entities: [User],
     entities: [__dirname + "/entity/*.js"],
-    synchronize: false,
-    logging: false,
+    synchronize: true,
+    logging: true,
   });
 };
 
